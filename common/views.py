@@ -24,3 +24,8 @@ def password_find(request):
     비밀번호 찾기
     """
 
+def page_not_found(request, exception):
+    """
+    404 Page Not found
+    """
+    return render(request, 'common/404.html', {})
